@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body {
+  @apply m-0 p-0;
+}
+
+body {
+  @apply min-h-screen;
+}
+
+.root-container {
+  @apply max-w-pageContent my-0 mx-auto py-0 px-5 box-border;
+}
+
+p {
+  @apply text-base/5;
+}
+
+@screen md {
+  .root-container {
+    @apply py-0 px-7.5;
+  }
+
+  p {
+    @apply text-lg/5;
+  }
+}
+
+@screen lg {
+  .root-container {
+    @apply py-0 px-12.5;
+  }
+
+  p {
+    @apply text-2xl/7;
+  }
+}
